@@ -2,6 +2,10 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
   
 body {
   margin: 0;
@@ -10,29 +14,40 @@ body {
   line-height: 1.5;
 }
   
-h1,
+h1 {
+  margin: 0;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
+  font-family: 'Chivo Mono', monospace;
 }
   
 p {
   margin: 0;
+  font-family: 'Chivo Mono', monospace;
 }
 
 a {
   text-decoration: none;
+  font-family: 'Chivo Mono', monospace;
 }
+
+a:visited { text-decoration: none; color: black; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:white }
 
 /* Header */
 
 header {
   display: flex; 
   padding: 10px;
-  background-color: rgba(237,246,249.0.5);
+  background-color: #3474c8;
 }
 
 header h1 {
@@ -40,10 +55,11 @@ header h1 {
   align-items: center;
   justify-content: center;
   font-size: 48px;
+  font-family: 'Rubik Vinyl', cursive;
 }
 
 h1 span {
-  color: red;
+  color: white;
 }
 
 nav {
@@ -62,8 +78,9 @@ nav ul {
 }
 
 nav li {
-  padding: 0 20px;
+  padding: 8px 20px;
   font-weight: bold;
+  color: black;
 }
 
 /* Hero */
@@ -74,7 +91,8 @@ nav li {
   margin-bottom: 25px;
   background-image: url("../Images/hero.jpg");  background-size: cover;
   background-position: center;
-
+  border-top: 5px solid black ;
+  border-bottom: 5px solid black ;
 }
 
 #headline {
@@ -83,38 +101,26 @@ nav li {
   background-color: rgba(255,255,255,0.6);
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 42.5%;
   padding: 25px;
   max-width: 550px;
   width: 400px;
   z-index: 100 ;
 }
 
-#headline p {
-  max-width: 350px;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0px 0px;
-  color: #636364;
-}
 
-#headline h3 {
+#headline h2, h3, p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#headline h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;
 }
 
 a img {
   display: inline-flex;
   height: 50px;
   width: 50px;
-  margin: 10px 30px;
+  margin: 15px 30px;
 }
 
 /* Body */
@@ -123,22 +129,66 @@ body {
   background-color: #edf6f9;
 }
 
-.about  {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
 }
 
-.largeBox {
-  background-color: aquamarine;
-  width: 200px;
-  height: 200px;
+#portfolioGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 150px 150px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "proj1 proj1"
+  "proj2 proj3"
+  "proj4 proj5";
 }
 
-.smallBox  {
-  background-color: aquamarine;
-  width: 100px;
-  height: 100px;
+#proj1 {
+  background-image: url("../Images/QGame.jpg");
+  grid-area: proj1;
+}
+
+#proj2 {
+  background-image: url("../Images/budget.jpg");
+  grid-area: proj2;
+}
+
+#proj3 {
+  background-image: url("../Images/code.jpg");
+  grid-area: proj3;
+}
+
+#proj4 {
+  background-image: url("../Images/ColourGame.jpg");
+  grid-area: proj4;
+}
+
+#proj5 {
+  background-image: url("../Images/run.jpg");
+  grid-area: proj5;
+}
+
+.portfolioGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid lightskyblue;
+  font-family: 'Chivo Mono', monospace;
 }
 
 /* Footer */
@@ -147,7 +197,24 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
-  background-color: #83c5be;
+  margin-top: 40px;
+  padding: 5px;
+  background-color: lightskyblue;
 }
 
+/* RESPONSIVE
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+*/
