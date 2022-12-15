@@ -42,7 +42,7 @@ a:hover { text-decoration: none; color:white; }
 a:focus { text-decoration: none; color:black; }
 a:hover, a:active { text-decoration: none; color:white }
 
-/* Header */
+/* Header/Nav */
 
 header {
   display: flex; 
@@ -109,11 +109,15 @@ nav li {
 }
 
 
-#headline h2, h3, p {
+#headline h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
+}
+
+#headline p {
+  text-align: center;
 }
 
 a img {
@@ -123,7 +127,7 @@ a img {
   margin: 15px 30px;
 }
 
-/* Body */
+/* About Me */
 
 body {
   background-color: #edf6f9;
@@ -135,6 +139,14 @@ body {
   width: 300px;
   margin: 50px auto;
 }
+
+#about p {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Portfolio Grid */
 
 #portfolioGrid {
   margin: 0px 5%;
@@ -150,26 +162,81 @@ body {
 #proj1 {
   background-image: url("../Images/QGame.jpg");
   grid-area: proj1;
+  opacity: .75;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#proj1:hover {
+  background-image: url("../Images/QGame.jpg");
+  grid-area: proj1;
+  opacity: 1;
 }
 
 #proj2 {
   background-image: url("../Images/budget.jpg");
   grid-area: proj2;
+  opacity: .75;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#proj2:hover {
+  background-image: url("../Images/budget.jpg");
+  grid-area: proj2;
+  opacity: 1;
 }
 
 #proj3 {
   background-image: url("../Images/code.jpg");
   grid-area: proj3;
+  opacity: .75;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#proj3:hover {
+  background-image: url("../Images/code.jpg");
+  grid-area: proj3;
+  opacity: 1;
 }
 
 #proj4 {
   background-image: url("../Images/ColourGame.jpg");
   grid-area: proj4;
+  opacity: .75;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#proj4:hover {
+  background-image: url("../Images/ColourGame.jpg");
+  grid-area: proj4;
+  opacity: 1;
 }
 
 #proj5 {
   background-image: url("../Images/run.jpg");
   grid-area: proj5;
+  opacity: .75;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#proj5:hover {
+  background-image: url("../Images/run.jpg");
+  grid-area: proj5;
+  opacity: 1;
 }
 
 .portfolioGridArea {
