@@ -42,12 +42,15 @@ a:hover { text-decoration: none; color:white; }
 a:focus { text-decoration: none; color:black; }
 a:hover, a:active { text-decoration: none; color:white }
 
+:root {
+  --header-footer: #598ed4;
+}
 /* Header/Nav */
 
 header {
   display: flex; 
   padding: 10px;
-  background-color: #3474c8;
+  background-color: var(--header-footer);
 }
 
 header h1 {
@@ -89,7 +92,7 @@ nav li {
   height: 800px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../Images/hero.jpg");  background-size: cover;
+  background-image: url("../Images/op2.jpg");  background-size: cover;
   background-position: center;
   border-top: 5px solid black ;
   border-bottom: 5px solid black ;
@@ -100,10 +103,11 @@ nav li {
   border-radius: 10%;
   background-color: rgba(255,255,255,0.6);
   position: absolute;
-  left: 50%;
-  top: 42.5%;
+  left: 10%;
+  top: 35%;
   padding: 25px;
   max-width: 550px;
+  max-height: 700px;
   width: 400px;
   z-index: 100 ;
 }
@@ -254,7 +258,7 @@ body {
   padding: 15px;
   color: white;
   font-size: 18px;
-  border-bottom: 5px solid lightskyblue;
+  border-bottom: 5px solid var(--header-footer);
   font-family: 'Chivo Mono', monospace;
 }
 
@@ -266,7 +270,7 @@ footer {
   justify-content: space-around;
   margin-top: 40px;
   padding: 5px;
-  background-color: lightskyblue;
+  background-color: var(--header-footer);
 }
 
 /* RESPONSIVE
