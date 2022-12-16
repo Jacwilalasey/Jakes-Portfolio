@@ -1,4 +1,8 @@
 /*CSS Reset*/
+:root {
+  --header-footer: #598ed4;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -38,14 +42,11 @@ a {
   font-family: 'Chivo Mono', monospace;
 }
 
-a:visited { text-decoration: none; color: black; }
-a:hover { text-decoration: none; color:white; }
-a:focus { text-decoration: none; color:black; }
-a:hover, a:active { text-decoration: none; color:white }
+a:visited { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:black }
 
-:root {
-  --header-footer: #598ed4;
-}
 /* Header/Nav */
 
 header {
