@@ -34,6 +34,7 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
   font-family: 'Chivo Mono', monospace;
 }
 
@@ -273,7 +274,7 @@ footer {
   background-color: var(--header-footer);
 }
 
-/* RESPONSIVE
+RESPONSIVE
 @media only screen and (max-width: 1000px) {
   #navigation {
     display: none;
@@ -288,4 +289,3 @@ footer {
     position: static;
     margin: 20px;
   }
-*/
